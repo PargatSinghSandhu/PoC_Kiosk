@@ -8,3 +8,30 @@ DefaultAccount     S-1-5-21-1945958628-710632427-257284811-503
 Guest              S-1-5-21-1945958628-710632427-257284811-501
 NursingIT          S-1-5-21-1945958628-710632427-257284811-1001
 WDAGUtilityAccount S-1-5-21-1945958628-710632427-257284811-504
+
+$namespace = "root\standardcimv2\embedded"
+$class = "WESL_UserSetting"
+$sid = "S-1-5-21-1945958628-710632427-257284811-1001"
+
+$instance = Get-CimInstance -Namespace $namespace -ClassName $class | Where-Object {$_.SID -eq $sid}
+
+if(-not $instance)
+{
+    New-CimInstance -Namespace $namespace -ClassName $class -Property
+    @{
+        SID = $sid
+        Shell = "C:\Program Files\Google\Chrome\Application\chrome.exe"
+        Parameters = "--kiosk https://www.google.com"
+        DefaultReturnCodeAction = 0
+    }
+
+}
+else {
+
+    Set-CimInstance -InputObject $instance -Property
+    @{
+        Shell = "C:\Program Files\Google\Chrome\Application\chrome.exe"
+        Parameters = "--kiosk https://www.google.com"
+        DefaultReturnCodeAction = 0
+    }
+}
