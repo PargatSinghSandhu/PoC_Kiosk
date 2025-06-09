@@ -35,3 +35,13 @@ else {
         DefaultReturnCodeAction = 0
     }
 }
+
+
+New-CimInstance : A parameter cannot be found that matches parameter name 'Property@'.
+At line:9 char:61
++ ...   New-CimInstance -Namespace $namespace -ClassName $class -Property@{
++                                                               ~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [New-CimInstance], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.Management.Infrastructure.CimCmdlets.NewCimInstanceComm
+   and
+
