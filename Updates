@@ -45,3 +45,12 @@ At line:9 char:61
     + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.Management.Infrastructure.CimCmdlets.NewCimInstanceComm
    and
 
+
+
+New-CimInstance : Invalid property "Parameters"
+At line:9 char:5
++     New-CimInstance -Namespace $namespace -ClassName $class -Property ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (WESL_UserSetting:CimInstance) [New-CimInstance], CimException
+    + FullyQualifiedErrorId : HRESULT 0x80041002,Microsoft.Management.Infrastructure.CimCmdlets.NewCimInstanceCommand
+
