@@ -1,3 +1,23 @@
+257284811-1001")
+PS C:\Users\NursingIT> $objUser = $objSID.Translate([System.Security.Principal.NTAccount])
+PS C:\Users\NursingIT> $objUser.Value
+NURS-A1-6ZZK5Y2\NursingIT
+PS C:\Users\NursingIT> Test-Path "C:\Program Files\Google\Chrome\Application\chrome.exe"
+True
+PS C:\Users\NursingIT> net localgroup administrators
+Alias name     administrators
+Comment        Adding CON_CM and CON_TM
+
+Members
+
+-------------------------------------------------------------------------------
+Administrator
+NursingIT
+The command completed successfully.
+
+PS C:\Users\NursingIT>
+
+
 $objSID = New-Object System.Security.Principal.SecurityIdentifier("S-1-5-21-1945958628-710632427-257284811-1001")
 $objUser = $objSID.Translate([System.Security.Principal.NTAccount])
 $objUser.Value
