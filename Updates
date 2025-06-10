@@ -1,3 +1,15 @@
+PS C:\WINDOWS\system32> net user KioskUser 1NURSIT4all!te /add
+The password does not meet the password policy requirements. Check the minimum password length, password complexity and password history requirements.
+
+More help is available by typing NET HELPMSG 2245.
+
+PS C:\WINDOWS\system32> NET HELPMSG 2245
+
+The password does not meet the password policy requirements. Check the minimum password length, password complexity and password history requirements.
+
+
+
+
 257284811-1001")
 PS C:\Users\NursingIT> $objUser = $objSID.Translate([System.Security.Principal.NTAccount])
 PS C:\Users\NursingIT> $objUser.Value
