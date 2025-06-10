@@ -1,3 +1,16 @@
+CustomReturnCodes       :
+CustomReturnCodesAction :
+DefaultAction           :
+Shell                   : C:\Program Files\Google\Chrome\Application\chrome.exe --kiosk
+                          https://www.google.com
+Sid                     : S-1-5-21-1945958628-710632427-257284811-1001
+PSComputerName          :
+
+
+
+PS C:\WINDOWS\system32>
+
+
 
 PS C:\Users\NursingIT> Get-LocalUser | Select Name, SID
 
