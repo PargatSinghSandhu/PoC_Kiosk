@@ -1,3 +1,27 @@
+PS C:\WINDOWS\system32> $namespace = "root\standardcimv2\embedded"
+>> $class = Get-CimClass -Namespace $namespace -ClassName WESL_UserSetting
+>>
+>> $user = "KioskUser"
+>> $chromePath = "C:\Program Files\Google\Chrome\Application\chrome.exe"
+>> $args = "--kiosk https://www.google.com"
+>>
+>> New-CimInstance -Namespace $namespace -ClassName WESL_UserSetting -Property @{
+>>     User = $user
+>>     Shell = $chromePath
+>>     AccountName = $args
+>> }
+New-CimInstance : Invalid property "AccountName"
+At line:8 char:1
++ New-CimInstance -Namespace $namespace -ClassName WESL_UserSetting -Pr ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (WESL_UserSetting:CimInstance) [New-CimInstance], CimException
+    + FullyQualifiedErrorId : HRESULT 0x80041002,Microsoft.Management.Infrastructure.CimCmdlets.NewCimInstanceCommand
+
+PS C:\WINDOWS\system32>
+
+
+
+
 
 PS C:\WINDOWS\system32> $namespace = "root\standardcimv2\embedded"
 >> $class = Get-CimClass -Namespace $namespace -ClassName WESL_UserSetting
