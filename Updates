@@ -1,3 +1,7 @@
+Set-AssignedAccess -UserName "KioskUser" `
+  -AppPath "C:\Program Files\Google\Chrome\Application\chrome.exe" `
+  -AppArguments "--kiosk https://www.google.com"
+
 PS C:\WINDOWS\system32> net user KioskUser 1NURSIT4all!te /add
 The password does not meet the password policy requirements. Check the minimum password length, password complexity and password history requirements.
 
