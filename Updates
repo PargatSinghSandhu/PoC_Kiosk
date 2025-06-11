@@ -1,3 +1,17 @@
+
+PS C:\WINDOWS\system32> Enable-WindowsOptionalFeature -FeatureName Client-EmbeddedShellLauncher -Online
+
+
+Path          :
+Online        : True
+RestartNeeded : False
+
+
+
+PS C:\WINDOWS\system32>
+
+
+
 PS C:\Users\NursingIT\Desktop> .\SetKiosk.ps1
 Set-AssignedAccess : A parameter cannot be found that matches parameter name 'AppPath'.
 At C:\Users\NursingIT\Desktop\SetKiosk.ps1:2 char:3
