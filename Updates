@@ -1,3 +1,13 @@
+PS C:\Users\NursingIT\Desktop> .\SetKiosk.ps1
+Set-AssignedAccess : A parameter cannot be found that matches parameter name 'AppPath'.
+At C:\Users\NursingIT\Desktop\SetKiosk.ps1:2 char:3
++   -AppPath "C:\Program Files\Google\Chrome\Application\chrome.exe" `
++   ~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-AssignedAccess], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Set-AssignedAccess
+
+
+
 Set-AssignedAccess -UserName "KioskUser" `
   -AppPath "C:\Program Files\Google\Chrome\Application\chrome.exe" `
   -AppArguments "--kiosk https://www.google.com"
