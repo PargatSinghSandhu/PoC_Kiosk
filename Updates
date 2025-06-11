@@ -1,4 +1,32 @@
 $namespace = "root\standardcimv2\embedded"
+$class = "WESL_UserSetting"
+$sid = "S-1-5-21-1945958628-710632427-257284811-1001"
+
+$instance = Get-CimInstance -Namespace $namespace -ClassName $class | Where-Object {$_.SID -eq $sid}
+
+$chromePath = "C:\Program Files\Google\Chrome\Application\chrome.exe --kiosk https://www.google.com"
+
+if(-not $instance)
+{
+    New-CimInstance -Namespace $namespace -ClassName $class -Property @{
+        SID = $sid
+        Shell = $chromePath
+        
+    }
+
+}
+else {
+
+    Set-CimInstance -InputObject $instance -Property @{
+        Shell = $chromePath
+        
+    }
+}
+
+
+
+
+$namespace = "root\standardcimv2\embedded"
 $class = Get-CimClass -Namespace $namespace -ClassName WESL_UserSetting
 
 $user = "KioskUser"
