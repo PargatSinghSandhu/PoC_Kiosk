@@ -1,3 +1,18 @@
+$namespace = "root\standardcimv2\embedded"
+$class = Get-CimClass -Namespace $namespace -ClassName WESL_UserSetting
+
+$user = "KioskUser"
+$chromePath = "C:\Program Files\Google\Chrome\Application\chrome.exe"
+$args = "--kiosk https://www.google.com"
+
+New-CimInstance -Namespace $namespace -ClassName WESL_UserSetting -Property @{
+    User = $user
+    Shell = $chromePath
+    CustomShellArguments = $args
+}
+
+
+
 
 PS C:\WINDOWS\system32> Enable-WindowsOptionalFeature -FeatureName Client-EmbeddedShellLauncher -Online
 
