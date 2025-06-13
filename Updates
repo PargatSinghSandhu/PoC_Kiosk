@@ -1,17 +1,13 @@
-$kioskUser = "KioskUser"
+$namespace = "root\standardcimv2\embedded"
+$user = "KioskUser"
 $chromePath = "C:\Program Files\Google\Chrome\Application\chrome.exe"
-$chromeArgs = "--kiosk https://www.google.com"
+$args = "--kiosk https://www.google.com"
 
-# Enable Assigned Access
-$assignedAccess = New-Object -TypeName PSObject -Property @{
-    AccountName = $kioskUser
-    AppUserModelId = "chrome.exe"  # You can also set it to the AppUserModelId of Chrome if necessary
-    StartMenuAppId = $chromePath
+New-CimInstance -Namespace $namespace -ClassName WESL_UserSetting -Property @{
+    User = $user
+    Shell = $chromePath
+    CustomShellArguments = $args
 }
-
-# Apply the Assigned Access configuration
-Set-AssignedAccess -UserName $kioskUser -AppUserModelId $chromePath -Uri $chromeArgs
-
 
 
 
