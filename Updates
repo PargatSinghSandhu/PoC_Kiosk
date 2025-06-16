@@ -16,7 +16,7 @@ if (-not $instance) {
 }
 
 
-
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 
 
