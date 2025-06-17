@@ -1,3 +1,24 @@
+PS C:\Users\NursingIT\Desktop> .\Chrome_Kiosk.ps1
+Get-CimInstance : Invalid class
+At C:\Users\NursingIT\Desktop\Chrome_Kiosk.ps1:5 char:13
++ $instance = Get-CimInstance -Namespace $namespace -ClassName WESL_Use ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : MetadataError: (root\standardci...ESL_UserSetting:String) [Get-CimInstance], CimExceptio
+   n
+    + FullyQualifiedErrorId : HRESULT 0x80041010,Microsoft.Management.Infrastructure.CimCmdlets.GetCimInstanceCommand
+
+New-CimInstance : Invalid class
+At C:\Users\NursingIT\Desktop\Chrome_Kiosk.ps1:8 char:5
++     New-CimInstance -Namespace $namespace -ClassName WESL_UserSetting ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : MetadataError: (WESL_UserSetting:CimInstance) [New-CimInstance], CimException
+    + FullyQualifiedErrorId : HRESULT 0x80041010,Microsoft.Management.Infrastructure.CimCmdlets.NewCimInstanceCommand
+
+PS C:\Users\NursingIT\Desktop> ^C
+
+
+
+
 $namespace = "root\standardcimv2\embedded"
 $sid = "<insert actual SID>"
 $chromePath = "C:\Program Files\Google\Chrome\Application\chrome.exe --kiosk https://www.google.com"
