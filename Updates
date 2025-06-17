@@ -1,3 +1,25 @@
+$namespace = "root\standardcimv2\embedded"
+$sid = "YOUR_SID_HERE"  # Example: S-1-5-21-786743719-591829700-1355714916-1006
+$shellPath = "cmd.exe"
+
+$instance = Get-CimInstance -Namespace $namespace -ClassName WESL_UserSetting | Where-Object { $_.SID -eq $sid }
+
+if (-not $instance) {
+    New-CimInstance -Namespace $namespace -ClassName WESL_UserSetting -Property @{
+        SID = $sid
+        Shell = $shellPath
+    }
+} else {
+    Set-CimInstance -InputObject $instance -Property @{
+        Shell = $shellPath
+    }
+}
+
+
+
+
+
+
 PS C:\WINDOWS\system32> dism /online /enable-feature /featurename:Client-DeviceLockdown /all
 >>
 >>
