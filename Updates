@@ -1,3 +1,6 @@
+Enable-WindowsOptionalFeature -FeatureName Client-EmbeddedShellLauncher -Online
+
+
 PS C:\Users\NursingIT\Desktop> .\Chrome_Kiosk.ps1
 Get-CimInstance : Invalid class
 At C:\Users\NursingIT\Desktop\Chrome_Kiosk.ps1:5 char:13
