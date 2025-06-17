@@ -1,3 +1,21 @@
+PS C:\WINDOWS\system32> dism /online /enable-feature /featurename:Client-DeviceLockdown /all
+>>
+>>
+
+Deployment Image Servicing and Management tool
+Version: 10.0.26100.1150
+
+Image Version: 10.0.26100.4061
+
+Enabling feature(s)
+[==========================100.0%==========================]
+The operation completed successfully.
+PS C:\WINDOWS\system32>
+
+
+
+
+
 dism /online /enable-feature /featurename:Client-DeviceLockdown /all
 
 
