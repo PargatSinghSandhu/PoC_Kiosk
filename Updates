@@ -1,3 +1,18 @@
+PS C:\Users\NursingIT\Desktop> .\Chrome_Kiosk.ps1
+
+
+CustomReturnCodes       :
+CustomReturnCodesAction :
+DefaultAction           :
+Shell                   : C:\Program Files\Google\Chrome\Application\chrome.exe --kiosk https://www.google.com
+Sid                     : S-1-5-21-786743719-591829700-1355714916-1006
+PSComputerName          :
+
+
+
+PS C:\Users\NursingIT\Desktop>
+
+
 dism /online /enable-feature /featurename:Client-DeviceLockdown /All
 
 
