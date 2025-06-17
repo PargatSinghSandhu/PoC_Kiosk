@@ -1,3 +1,6 @@
+Get-WindowsOptionalFeature -Online -FeatureName Client-EmbeddedShellLauncher
+
+
 Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
 
 PS C:\WINDOWS\system32> whoami/user
