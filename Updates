@@ -1,3 +1,15 @@
+PS C:\Users\NursingIT\Desktop> ^C
+PS C:\Users\NursingIT\Desktop> Enable-WindowsOptionalFeature -FeatureName Client-EmbeddedShellLauncher -Online
+Enable-WindowsOptionalFeature : One or several parent features are disabled so current feature can not be enabled.
+At line:1 char:1
++ Enable-WindowsOptionalFeature -FeatureName Client-EmbeddedShellLaunch ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Enable-WindowsOptionalFeature], COMException
+    + FullyQualifiedErrorId : Microsoft.Dism.Commands.EnableWindowsOptionalFeatureCommand
+
+
+
+
 Enable-WindowsOptionalFeature -FeatureName Client-EmbeddedShellLauncher -Online
 
 
