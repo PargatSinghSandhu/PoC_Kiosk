@@ -1,3 +1,19 @@
+
+PS C:\WINDOWS\system32> Set-CimInstance -Namespace "root\standardcimv2\embedded" -ClassName "WESL_UserSetting" `
+>>   -Filter "SID='S-1-5-21-786743719-591829700-1355714916-1006'" `
+>>   -Property @{ Shell = "cmd.exe" }
+Set-CimInstance : A parameter cannot be found that matches parameter name 'ClassName'.
+At line:1 char:58
++ ... mInstance -Namespace "root\standardcimv2\embedded" -ClassName "WESL_U ...
++                                                        ~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-CimInstance], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.Management.Infrastructure.CimCmdlets.SetCimInstanceComm
+   and
+
+PS C:\WINDOWS\system32>
+
+
+
 Set-CimInstance -Namespace "root\standardcimv2\embedded" -ClassName "WESL_UserSetting" `
   -Filter "SID='S-1-5-21-786743719-591829700-1355714916-1006'" `
   -Property @{ Shell = "cmd.exe" }
