@@ -1,3 +1,15 @@
+
+The DISM log file can be found at C:\WINDOWS\Logs\DISM\dism.log
+PS C:\Users\NursingIT\Desktop> dism /online /get-features | findstr Embedded
+Feature Name : Client-EmbeddedShellLauncher
+Feature Name : Client-EmbeddedBootExp
+Feature Name : Client-EmbeddedLogon
+PS C:\Users\NursingIT\Desktop>
+
+
+
+
+
 dism /online /get-features | findstr Embedded
 
 
