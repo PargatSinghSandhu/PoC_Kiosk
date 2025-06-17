@@ -1,3 +1,5 @@
+Get-WindowsOptionalFeature -Online -FeatureName Client-EmbeddedShellLauncher
+
 $namespace = "root\standardcimv2\embedded"
 $class = "WESL_UserSetting"
 $sid = "S-1-5-21-786743719-591829700-1355714916-1006"
