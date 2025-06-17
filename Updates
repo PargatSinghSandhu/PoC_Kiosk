@@ -1,3 +1,10 @@
+Set-CimInstance -Namespace "root\standardcimv2\embedded" -ClassName "WESL_UserSetting" `
+  -Filter "SID='S-1-5-21-786743719-591829700-1355714916-1006'" `
+  -Property @{ Shell = "cmd.exe" }
+
+
+
+
 PS C:\WINDOWS\system32> Shell ="cmd.exe"
 Shell : The term 'Shell' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
 the spelling of the name, or if a path was included, verify that the path is correct and try again.
