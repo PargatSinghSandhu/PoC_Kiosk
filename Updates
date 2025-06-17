@@ -1,3 +1,7 @@
+dism /online /enable-feature /featurename:Client-DeviceLockdown /all
+
+
+
 
 PS C:\WINDOWS\system32> Get-WindowsOptionalFeature -Online -FeatureName Client-EmbeddedShellLauncher
 
