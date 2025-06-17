@@ -1,3 +1,10 @@
+dism /online /get-features | findstr Embedded
+
+
+
+
+
+
 dism /online /enable-feature /featurename:EmbeddedMode /All
 
 PS C:\Users\NursingIT\Desktop> dism /online /enable-feature /featurename:EmbeddedMode /All
