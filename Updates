@@ -1,3 +1,14 @@
+$namespace = "root\standardcimv2\embedded"
+$class = "WESL_UserSetting"
+$sid = "S-1-5-21-786743719-591829700-1355714916-1006"
+
+$instance = Get-CimInstance -Namespace $namespace -ClassName $class | Where-Object { $_.SID -eq $sid }
+
+
+Set-CimInstance -InputObject $instance -Property @{ Shell = "cmd.exe" }
+
+
+
 
 PS C:\WINDOWS\system32> Set-CimInstance -Namespace "root\standardcimv2\embedded" -ClassName "WESL_UserSetting" `
 >>   -Filter "SID='S-1-5-21-786743719-591829700-1355714916-1006'" `
