@@ -1,3 +1,24 @@
+PS C:\Users\NursingIT\Desktop> dism /online /enable-feature /featurename:Client-EmbeddedShellLauncher
+
+Deployment Image Servicing and Management tool
+Version: 10.0.26100.1150
+
+Image Version: 10.0.26100.4061
+
+Enabling feature(s)
+[==========================100.0%==========================]
+
+Error: 50
+
+The operation is complete but Client-EmbeddedShellLauncher feature was not enabled.
+A required parent feature may not be enabled. You can use the /enable-feature /all option to automatically enable each parent feature from the following list. If the parent feature(s) are already enabled, refer to the log file for further diagnostics.
+Client-DeviceLockdown
+
+The DISM log file can be found at
+
+
+
+
 dism /online /enable-feature /featurename:Client-EmbeddedShellLauncher
 
 
