@@ -1,3 +1,9 @@
+dism /online /enable-feature /featurename:EmbeddedMode /All
+
+
+dism /online /enable-feature /featurename:Client-EmbeddedShellLauncher
+
+
 PS C:\Users\NursingIT\Desktop> ^C
 PS C:\Users\NursingIT\Desktop> Enable-WindowsOptionalFeature -FeatureName Client-EmbeddedShellLauncher -Online
 Enable-WindowsOptionalFeature : One or several parent features are disabled so current feature can not be enabled.
