@@ -1,5 +1,25 @@
 dism /online /enable-feature /featurename:EmbeddedMode /All
 
+PS C:\Users\NursingIT\Desktop> dism /online /enable-feature /featurename:EmbeddedMode /All
+
+Deployment Image Servicing and Management tool
+Version: 10.0.26100.1150
+
+Image Version: 10.0.26100.4061
+
+
+Error: 0x800f080c
+
+Feature name EmbeddedMode is unknown.
+A Windows feature name was not recognized.
+Use the /Get-Features option to find the name of the feature in the image and try the command again.
+
+The DISM log file can be found at C:\WINDOWS\Logs\DISM\dism.log
+PS C:\Users\NursingIT\Desktop>
+
+
+
+
 
 dism /online /enable-feature /featurename:Client-EmbeddedShellLauncher
 
