@@ -1,3 +1,17 @@
+PS C:\WINDOWS\system32> whoami /user
+
+USER INFORMATION
+----------------
+
+User Name               SID
+======================= ============================================
+shs-m-3jg47g3\nursingit S-1-5-21-786743719-591829700-1355714916-1006
+PS C:\WINDOWS\system32>
+
+
+
+
+
 PS C:\WINDOWS\system32> Get-CimInstance -Namespace root\standardcimv2\embedded -ClassName WESL_UserSetting | Format-List
 
 
