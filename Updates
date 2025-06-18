@@ -1,3 +1,8 @@
+"C:\Program Files\Google\Chrome\Application\chrome.exe" --kiosk https://www.google.com
+
+
+
+
 PS C:\Users\NursingIT\Desktop> Get-CimInstance -Namespace root\standardcimv2\embedded -ClassName WESL_UserSetting | Format-List
 
 
