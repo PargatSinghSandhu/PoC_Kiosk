@@ -1,3 +1,18 @@
+PS C:\WINDOWS\system32> Get-WindowsOptionalFeature  -Online  -FeatureName Client-EmbeddedShellLauncher
+
+
+FeatureName      : Client-EmbeddedShellLauncher
+DisplayName      : Shell Launcher
+Description      : Launches an alternate shell instead of the default Windows shell
+RestartRequired  : Possible
+State            : Enabled
+CustomProperties :
+
+
+
+
+
+
 PS C:\Users\NursingIT\Desktop> Get-CimInstance -Namespace "root\standardcimv2\embedded" -ClassName "WESL_UserSetting" | Format-List
 
 
