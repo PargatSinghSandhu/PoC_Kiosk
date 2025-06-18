@@ -1,3 +1,19 @@
+PS C:\WINDOWS\system32> Get-CimInstance -Namespace root\standardcimv2\embedded -ClassName WESL_UserSetting | Format-List
+
+
+CustomReturnCodes       :
+CustomReturnCodesAction :
+DefaultAction           :
+Shell                   : cmd.exe
+Sid                     : S-1-5-21-786743719-591829700-1355714916-1006
+PSComputerName          :
+
+
+
+PS C:\WINDOWS\system32>
+
+
+
 PS C:\WINDOWS\system32> Get-WindowsOptionalFeature  -Online  -FeatureName Client-EmbeddedShellLauncher
 
 
