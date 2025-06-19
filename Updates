@@ -1,3 +1,15 @@
+USER INFORMATION
+----------------
+
+User Name               SID
+======================= ============================================
+shs-m-3jg47g3\nursingit S-1-5-21-786743719-591829700-1355714916-1006
+PS C:\WINDOWS\system32>
+
+
+
+
+
 PS C:\WINDOWS\system32> Get-EventLog -LogName Application | Select-String "WESL"
 PS C:\WINDOWS\system32> Get-WinEvent -LogName Microsoft-Windows-Shell-Core/Operational
 
