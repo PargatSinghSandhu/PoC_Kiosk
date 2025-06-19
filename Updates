@@ -1,3 +1,22 @@
+PS C:\WINDOWS\system32> --kiosk --no-first-run https://www.google.com
+At line:1 char:3
++ --kiosk --no-first-run https://www.google.com
++   ~
+Missing expression after unary operator '--'.
+At line:1 char:3
++ --kiosk --no-first-run https://www.google.com
++   ~~~~~
+Unexpected token 'kiosk' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingExpressionAfterOperator
+
+
+
+
+
+
+
+
 "C:\Program Files\Google\Chrome\Application\chrome.exe" --kiosk https://www.google.com
 
 
