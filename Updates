@@ -1,3 +1,6 @@
+"C:\Program Files\Google\Chrome\Application\chrome.exe" --kiosk https://www.google.com
+
+
 PS C:\WINDOWS\system32>  chrome.exe --disable-background-mode
 chrome.exe : The term 'chrome.exe' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
 spelling of the name, or if a path was included, verify that the path is correct and try again.
