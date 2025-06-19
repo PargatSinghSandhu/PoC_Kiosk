@@ -1,3 +1,6 @@
+& "C:\Program Files\Google\Chrome\Application\chrome.exe" --kiosk --no-first-run https://www.google.com
+
+
 PS C:\WINDOWS\system32> --kiosk --no-first-run https://www.google.com
 At line:1 char:3
 + --kiosk --no-first-run https://www.google.com
